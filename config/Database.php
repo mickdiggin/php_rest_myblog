@@ -1,9 +1,9 @@
 <?php
     class Database {
         // DB Params
-        private $host = 'localhost';
-        private $db_name = 'myblog';
-        private $username = 'root';
+        private $host = getenv('HOST');
+        private $db_name = getenv('DB_NAME');
+        private $username = getenv('USERNAME');
         private $password = getenv('PASSWORD');
         private $conn;
 
