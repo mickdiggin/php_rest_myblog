@@ -1,11 +1,18 @@
 <?php
     class Database {
         // DB Params
-        private $host = "nnsgluut5mye50or.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-        private $db_name = "p0u5g6rpoaolgc6c";
-        private $username = "g8r02e1umo4jrmi8";
-        private $password = getenv('PASSWORD');
+        private $host;
+        private $db_name;
+        private $username;
+        private $password;
         private $conn;
+
+        public function __construct() {
+            $host = "nnsgluut5mye50or.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+            $db_name = "p0u5g6rpoaolgc6c";
+            $username = "g8r02e1umo4jrmi8";
+            $password = getenv('PASSWORD');
+        }
 
         // DB Connect
         public function connect() {
