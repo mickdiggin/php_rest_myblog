@@ -8,7 +8,7 @@
         private $conn;
 
         public function __construct() {
-            $host = "nnsgluut5mye50or.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;port=3306;";
+            $host = "nnsgluut5mye50or.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;port=3306";
             $db_name = "p0u5g6rpoaolgc6c";
             $username = "g8r02e1umo4jrmi8";
             $password = getenv('PASSWORD');
