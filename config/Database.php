@@ -23,7 +23,6 @@
             $this->conn = null;
 
             try {
-                echo this->dbparts;
                 $this->conn = new PDO('mysql:host=' . this->$host . ';port=3306;dbname=' . $this->$database, $this->username, $this->password);
                 $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch(PDOException $e) {
