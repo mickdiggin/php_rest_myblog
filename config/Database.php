@@ -28,7 +28,10 @@
             } catch(PDOException $e) {
                 echo 'Connection Error: ' . $e->getMessage();
             }
-            
+            echo $host;
+            echo $database;
+            echo $username;
+            echo $password;
             return $this->conn;
         }
     }
