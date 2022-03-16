@@ -3,7 +3,7 @@
     header('Access-Control-Allow-Origin: *');
     header('Content-Type: application/json');
     echo getcwd();
-    include_once '../../../config/Database.php';
+    include_once '../../config/Database.php';
     include_once '../../../models/Post.php';
     echo "Instantiate DB and connect";
     // Instantiate DB & Connect
