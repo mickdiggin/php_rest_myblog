@@ -5,16 +5,17 @@
     echo getcwd();
     include_once '../../config/Database.php';
     include_once '../../models/Post.php';
-
+    echo "Instantiate DB and connect";
     // Instantiate DB & Connect
     $database = new Database();
     $db = $database->connect();
-
+    echo "Instantiate blog post object";
     // Instantiate blog post object
     $post = new Post($db);
-
+    echo "Blog post query";
     // Blog post query
     $result = $post->read();
+    echo "Row count";
     // Get row count
     $num = $result->rowCount();
 
